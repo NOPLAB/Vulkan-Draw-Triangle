@@ -461,9 +461,9 @@ private:
 
     void LoadVertShader()
     {
-        const size_t vert_spv_file_sz = std::filesystem::file_size("P:\\Vulkan\\VertexSample.spv");
+        const size_t vert_spv_file_sz = std::filesystem::file_size("SampleShader\\VertexSample.spv");
 
-        std::ifstream vert_spv_file("P:\\Vulkan\\VertexSample.spv", std::ios_base::binary);
+        std::ifstream vert_spv_file("SampleShader\\VertexSample.spv", std::ios_base::binary);
 
         std::vector<char> vert_spv_file_data(vert_spv_file_sz);
         vert_spv_file.read(vert_spv_file_data.data(), vert_spv_file_sz);
@@ -477,9 +477,9 @@ private:
 
     void LoadFragmentShader()
     {
-	    const size_t frag_spv_file_sz = std::filesystem::file_size("P:\\Vulkan\\FragmentSample.spv");
+	    const size_t frag_spv_file_sz = std::filesystem::file_size("SampleShader\\FragmentSample.spv");
 
-        std::ifstream frag_spv_file("P:\\Vulkan\\FragmentSample.spv", std::ios_base::binary);
+        std::ifstream frag_spv_file("SampleShader\\FragmentSample.spv", std::ios_base::binary);
 
         std::vector<char> frag_spv_file_data(frag_spv_file_sz);
         frag_spv_file.read(frag_spv_file_data.data(), frag_spv_file_sz);
